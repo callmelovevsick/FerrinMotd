@@ -1,0 +1,5 @@
+§c§k00   §e§lWelcome §lTo §a§lCozy §a§lMC   §c§k00                        §c§k00   §bChúc bạn chơi vui vẻ \!     §c§k00
+&bWelcome to &lOur Server!&r\n&7Join our community today.
+&eNow running on &61.21.x!&r\n&fCheck out our new features.
+&dExperimental &lSurvival&r\n&7Join &f%player_count% &7other players!
+&aJoin the adventure!\n&7New updates every week.

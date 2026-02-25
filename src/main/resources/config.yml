@@ -1,0 +1,12 @@
+# FerrinMotd Configuration
+
+# Interval in seconds to switch the MOTD
+# Set to 0 to disable automatic rotation (will stay on the first/randomly picked MOTD until reload)
+interval: 60
+
+# If true, picks a random MOTD from the list.
+# If false, rotates through them sequentially.
+random: true
+
+# Prefix for plugin messages
+prefix: "&8[&bFerrinMotd&8] &f"

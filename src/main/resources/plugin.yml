@@ -1,0 +1,15 @@
+name: FerrinMotd
+version: 1.0.0
+main: com.ferrinmotd.FerrinMotd
+api-version: '1.21'
+author: lovevsick
+description: A production-ready dynamic MOTD plugin for Spigot and Paper.
+commands:
+  ferrinmotd:
+    description: Main command for FerrinMotd.
+    usage: /ferrinmotd reload
+    permission: ferrinmotd.reload
+permissions:
+  ferrinmotd.reload:
+    description: Allows reloading the FerrinMotd configuration.
+    default: op
