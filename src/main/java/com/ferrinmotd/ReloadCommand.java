@@ -16,14 +16,14 @@ public class ReloadCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!sender.hasPermission("ferrinmotd.reload")) {
-            sender.sendMessage(ChatColor.RED + "You do not have permission to execute this command.");
+            sender.sendMessage(ChatColor.RED + "No permission.");
             return true;
         }
 
         if (args.length > 0 && args[0].equalsIgnoreCase("reload")) {
             plugin.reloadPlugin();
             String prefix = plugin.getConfig().getString("prefix", "&8[&bFerrinMotd&8] &f");
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix + "&aConfiguration and MOTDs reloaded!"));
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', prefix + "&aReloaded successfully!"));
             return true;
         }
 

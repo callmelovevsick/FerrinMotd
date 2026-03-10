@@ -44,7 +44,7 @@ public class MotdManager {
             motdList.add("&cSet your MOTD in motd.txt!");
         }
         
-        rotate(); 
+        rotate();
     }
 
     public void rotate() {
@@ -65,9 +65,7 @@ public class MotdManager {
     }
 
     private String format(String input) {
-        // Handle physical \n characters
         String processed = input.replace("\\n", "\n");
-        // Translate & to §
         return ChatColor.translateAlternateColorCodes('&', processed);
     }
 

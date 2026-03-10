@@ -15,7 +15,7 @@ public class FerrinMotd extends JavaPlugin {
         this.motdManager = new MotdManager(this);
         this.motdManager.loadMotds();
 
-        getServer().getPluginManager().registerEvents(new MotdListener(motdManager), this);
+        getServer().getPluginManager().registerEvents(new MotdListener(this, motdManager), this);
         getCommand("ferrinmotd").setExecutor(new ReloadCommand(this));
 
         startRotationTask();
@@ -26,7 +26,6 @@ public class FerrinMotd extends JavaPlugin {
     @Override
     public void onDisable() {
         stopRotationTask();
-        getLogger().info("FerrinMotd disabled.");
     }
 
     public void reloadPlugin() {
